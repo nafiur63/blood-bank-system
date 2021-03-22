@@ -1,13 +1,16 @@
-
+import {Route} from "react-router-dom" 
 import './App.css';
 import WelcomePage from './components/WelcomePage/WelcomePage';
-import PlainCssButton from './components/SignUp/wow/PlainCSSButton';
+import SignUp from "./components/SignUp/SignUp";
+
 
 function App() {
   return (
-    <div>
-       <WelcomePage/>
-    </div>
+    <>
+       {/* <Route exact path="/" component={WelcomePage} />
+       <Route path="/uploadphoto" component ={UploadPhoto} /> */}
+       <SignUp/>
+    </>
   );
 }
 

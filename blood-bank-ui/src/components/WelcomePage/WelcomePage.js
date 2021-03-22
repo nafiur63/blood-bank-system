@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, makeStyles } from '@material-ui/core'
 import bloodDrop from "./bloodDrop.svg"
+import {Link} from "react-router-dom"
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -29,8 +30,8 @@ const WelcomePage = () => {
   return (
     <div className={classes.box}>
       <img className={classes.bloodimage} src={bloodDrop}/>
-      <h1 style={{paddingLeft:"20%",fontSize:"2.6rem"}}><span style={{color:"red"}}>Blood</span> Donation</h1>
-      <Button variant="contained" className={classes.button}>Start Journey</Button>
+      <h1 style={{paddingLeft:"20%",fontSize:"2.6rem",fontWeight:"900"}}><span style={{color:"red"}}>Blood</span> Donation</h1>
+      <Button variant="contained" className={classes.button} component={Link} to={"/uploadphoto"}>Start Journey</Button>
     </div>
   )
 }
