@@ -10,6 +10,7 @@ function App() {
        {/* <Route exact path="/" component={WelcomePage} />
        <Route path="/uploadphoto" component ={UploadPhoto} /> */}
        <SignUp/>
+       {/* <WelcomePage/> */}
     </>
   );
 }
